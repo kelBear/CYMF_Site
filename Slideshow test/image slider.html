@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>My Image Slider</title>
+    <link rel="Stylesheet" href="style2.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jslider.js"></script>
+    
+    <script type="text/javascript">
+        $(function() {
+            $(".slider").jslider({
+                btnNext: ".next",
+                btnPrev: ".prev"
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="container">
+    
+    <img id="prev" class="prev" src="previous.png"/>
+    <img id="next" class="next" src="next.png"/>
+    
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="slider" src="img1.jpg" alt="Image 1"/>
+            </li>
+            <li>
+                <img class="slider" src="img2.jpg" alt="Image 2"/>
+            </li>
+            <li>
+                <img class="slider" src="img3.jpg" alt="Image 3"/>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+
+
+</body>
+</html>
